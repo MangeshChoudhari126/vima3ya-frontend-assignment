@@ -1,32 +1,9 @@
-# 🚀 Task 2 — 3D Model Viewer (Three.js)
+# 🚀 Vima3ya Frontend Assignment
 
-This project demonstrates a **3D model viewer** built using Three.js with a focus on **optimized loading, lazy loading, and performance handling**.
+This repository contains two tasks:
 
----
-
-## 📁 Project Structure
-
-```
-task-2/
-├── public/
-│   └── model/
-│       └── model-compressed.glb
-├── src/
-│   ├── main.js
-│   └── style.css
-├── index.html
-├── package.json
-└── NOTES.md
-```
-
----
-
-## 🛠 Tech Stack
-
-* Three.js (for 3D rendering)
-* Vite (for development server)
-* JavaScript (ES6+)
-* CSS (basic styling)
+* **Task 1** → Reusable Form System (React + Formik)
+* **Task 2** → 3D Model Viewer (Three.js)
 
 ---
 
@@ -35,22 +12,13 @@ task-2/
 Make sure you have installed:
 
 * Node.js (v16 or above)
-* npm (comes with Node.js)
+* npm (comes with Node)
 
 ---
 
-## 🚀 How to Run the Project
+## 📦 Install Dependencies
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/MangeshChoudhari126/vima3ya-frontend-assignment.git
-cd vima3ya-frontend-assignment/task-2
-```
-
----
-
-### 2. Install Dependencies
+Run this in both folders:
 
 ```bash
 npm install
@@ -58,17 +26,14 @@ npm install
 
 ---
 
-### 3. Start Development Server
+## 🚀 Run Task 1 (React App)
 
 ```bash
+cd task-1
 npm run dev
 ```
 
----
-
-### 4. Open in Browser
-
-Visit:
+Open:
 
 ```
 http://localhost:5173
@@ -76,91 +41,29 @@ http://localhost:5173
 
 ---
 
-## ✨ Features Implemented
+## 🚀 Run Task 2 (3D Viewer)
 
-### ✅ 3D Model Rendering
+```bash
+cd task-2
+npm run dev
+```
 
-* Loads and displays `.glb` model using Three.js
+Open:
 
----
-
-### ✅ Draco Compression
-
-* Model is compressed using Draco to reduce file size
-* Improves loading performance
-
----
-
-### ✅ Lazy Loading of Three.js
-
-* Three.js is dynamically imported
-* Prevents blocking initial page load
-* Improves performance
+```
+http://localhost:5173
+```
 
 ---
 
-### ✅ Loading Indicator
+## 📌 Notes
 
-* Displays loading progress while model is loading
-* Hides automatically after model loads
-
----
-
-### ✅ Load Time Logging
-
-* Logs model loading time in milliseconds using `performance.now()`
-
----
-
-## 📌 Model Details
-
-* Format: `.glb`
-* Location: `public/model/model-compressed.glb`
-* Must be a valid binary GLB file
-
----
-
-## 📊 Performance Optimization
-
-* Lazy loading reduces initial bundle size
-* Draco compression minimizes asset size
-* Efficient rendering loop using requestAnimationFrame
-
----
-
-## 🧠 Notes
-
-Refer to `NOTES.md` for:
-
-* GLB compression details
-* Benefits of lazy loading
-* Importance of memory management (`dispose()`)
-
----
-
-## ⚠️ Common Issues
-
-### ❌ Model not loading
-
-* Ensure correct file path:
+* Run each task **separately**
+* Ensure dependencies are installed before running
+* Task 2 requires a valid `.glb` file in:
 
   ```
-  /model/model-compressed.glb
+  public/model/model-compressed.glb
   ```
-
-### ❌ Loader stuck
-
-* Check if `.glb` file is valid (not empty or corrupted)
-
-### ❌ Console errors
-
-* Verify Draco decoder path is correct
-
----
-
-## 🙌 Author
-
-Your Name
-GitHub: https://github.com/MangeshChoudhari126
 
 ---
