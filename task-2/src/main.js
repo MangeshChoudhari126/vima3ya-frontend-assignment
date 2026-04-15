@@ -54,7 +54,7 @@ loader.setDRACOLoader(dracoLoader);
 
 // Load Model
 loader.load(
-  "/model/model-compressed.glb",
+  "/model/model-draco.glb",
 
   (gltf) => {
     scene.add(gltf.scene);
